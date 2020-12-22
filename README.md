@@ -27,6 +27,8 @@ SO THAT my account balance is accurate when I am traveling
 
 ## Link to the application
 
+<a href=" https://aqueous-atoll-41641.herokuapp.com/">Link to application</a>
+
 ## Screenshots
 
 <img src="public/images/Budget.png">
@@ -36,6 +38,8 @@ SO THAT my account balance is accurate when I am traveling
 - VS Code - (https://code.visualstudio.com/)
 
 ## License
+
+MIT License
 
 ## Author
 
