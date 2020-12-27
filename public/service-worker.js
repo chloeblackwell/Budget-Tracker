@@ -16,7 +16,7 @@ const staticFilesToPreCache = [
 ].concat(iconFiles);
 
 
-// install
+// Install
 self.addEventListener("install", function (evt) {
     evt.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
@@ -28,7 +28,7 @@ self.addEventListener("install", function (evt) {
     self.skipWaiting();
 });
 
-// activate
+// Activate
 self.addEventListener("activate", function (evt) {
     evt.waitUntil(
         caches.keys().then(keyList => {
@@ -46,7 +46,7 @@ self.addEventListener("activate", function (evt) {
     self.clients.claim();
 });
 
-// fetch
+// Fetch
 self.addEventListener("fetch", function (evt) {
     const { url } = evt.request;
     if (url.includes("/api")) {
