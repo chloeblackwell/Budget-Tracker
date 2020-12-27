@@ -27,7 +27,7 @@ SO THAT my account balance is accurate when I am traveling
 
 ## Link to the application
 
-<a href=" https://aqueous-atoll-41641.herokuapp.com/">Link to application</a>
+<a href="https://aqueous-atoll-41641.herokuapp.com/">Link to application</a>
 
 ## Screenshots
 
