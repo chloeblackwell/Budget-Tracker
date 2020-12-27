@@ -9,8 +9,7 @@ const iconFiles = iconSizes.map(
 const staticFilesToPreCache = [
     "/",
     "/index.js",
-    "/chart.js",
-    "/manifest.webmanifest",
+    "/manifest.json",
     "/db.js",
     "/index.html",
     "/styles.css",
