@@ -1,17 +1,20 @@
-const CACHE_NAME = 'static-cache-bt-v1';
+const CACHE_NAME = 'static-cache-bt-v2';
 const DATA_CACHE_NAME = 'data-cache-bt-v1';
 
-const iconSizes = ['192', '512'];
-const iconFiles = iconSizes.map(
-    (size) => `/icons/icon-${size}x${size}.png`
-);
+// const iconSizes = ['192', '512'];
+// const iconFiles = iconSizes.map(
+//     (size) => `/icons/icon-${size}x${size}.png`
+// );
 
 const staticFilesToPreCache = [
     '/',
     '/index.js',
+    '/index.html',
     '/favicon.ico',
     '/manifest.json',
-].concat(iconFiles);
+    '/icons/icon-192x192.png',
+    '/icons/icon-512x512.png'
+];
 
 
 // Install
@@ -56,7 +59,7 @@ self.addEventListener('fetch', function (evt) {
                     .then(response => {
                         // If the response was good, clone it and store it in the cache.
                         if (response.status === 200) {
-                            cache.put(evt.request, response.clone());
+                            cache.put(evt.request.url, response.clone());
                         }
 
                         return response;
